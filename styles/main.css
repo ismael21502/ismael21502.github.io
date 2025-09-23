@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212;
+}
+
+.about {
+  min-height: 100dvh;
+  max-width: 100vw;
+  padding: 0 70px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+}
+.about h1 {
+  font-size: 30pt;
+  color: #ff2d95;
+}
+.about p {
+  font-size: 16pt;
+  margin: 0 !important;
+}
+.about img {
+  object-fit: cover;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 550px;
+}
+.about div {
+  width: 100%;
+}
+.about div p {
+  text-align: start;
+  margin: 0;
+}
+.about .technology {
+  display: block;
+  max-width: 120px;
+  margin: 0;
+  padding: 0 15px;
+  border: 2px solid #758BFD;
+  border-radius: 5px;
+  background-color: #0E35FB;
+  box-shadow: 0 0 10px #002bff;
+}
+.about .technology p {
+  display: inline-block;
+  font-size: 11pt;
+}
+.about .technology i {
+  display: inline-block;
+  margin: auto;
+}
+
+#aboutImage {
+  display: none;
+  justify-content: center;
+}
+
+#aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactSection {
+  scroll-margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  padding: 0 20px;
+  gap: 10px;
+  min-height: 70dvh;
+  background-color: #0d0d0d;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%;
+  /* crece, encoge, base del 45% */
+  gap: 30px;
+  width: 100%;
+}
+.contactContainer h1 {
+  font-size: 30pt;
+}
+
+.email {
+  display: flex;
+  gap: 20px;
+}
+.email a {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 12pt;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.cvButton {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #e0006f;
+  font-size: 18pt;
+}
+
+.contactIcon {
+  display: flex;
+  padding: 10px 0;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#contactInfo {
+  padding-left: 15px;
+}
+
+.contactForm {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 20px;
+}
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #262626;
+  border: none;
+  border-radius: 5px;
+  color: #e0e0e0;
+  padding: 5px 15px;
+  font-size: 16pt;
+}
+.contactForm input {
+  height: 40px;
+}
+.contactForm textarea {
+  height: 100%;
+  resize: none;
+}
+.contactForm button {
+  width: 150px;
+  height: 70px;
+  margin-left: auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0006f;
+  color: #ffffff;
+  font-size: 18pt;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.inputs {
+  display: flex;
+  width: 100%;
+}
+
+.navBar {
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  justify-content: end;
+  padding: 10px 10px;
+  gap: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #121212;
+}
+
+.navItem {
+  font-size: 14pt;
+  padding-bottom: 5px;
+}
+.navItem a {
+  color: #949494;
+}
+
+.projects {
+  scroll-margin-top: 40px;
+  background-color: none;
+  margin: 25px auto;
+  padding: 10px;
+  width: min(85vw, 1200px);
+  min-height: 60vh;
+}
+.projects h1 {
+  color: #e0e0e0;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 50px;
+}
+
+.title {
+  color: #ff2d95;
+}
+
+.card {
+  width: min(320px, 100%);
+  min-height: 60vh;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #1e1e1e;
+  border: 2px solid #121212;
+  padding: 15px;
+}
+.card img {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  aspect-ratio: 1/1;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.cardContent p {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 16pt;
+  line-height: 1.3;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #0cf8f8;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+.card:hover img {
+  filter: grayscale(0);
+}
+.card:hover h3 {
+  color: #ff2d95;
+}
+.card:hover span {
+  color: #15ebeb;
+}
+
+.contactIcon:not(:hover) {
+  transition: all 0.2s ease;
+}
+.contactIcon:not(:hover) i {
+  color: #06cbcb !important;
+}
+
+.contactIcon:hover {
+  transition: all 0.1s ease;
+  scale: 1.2;
+}
+.contactIcon:hover i {
+  color: #0cf8f8 !important;
+  text-shadow: 0 0 2px #0cf8f8;
+}
+
+.navItem.active a {
+  color: #e0e0e0;
+}
+
+.navItem:hover a {
+  color: #e0e0e0;
+}
+
+.navItem::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 0;
+  height: 5px;
+  background-color: #0cf8f8;
+  box-shadow: 0 0 10px #0cf8f8;
+  transition: 0.2s;
+}
+
+.navItem:hover:after {
+  width: 100%;
+}
+
+.navItem.active::after {
+  width: 100%;
+}
+
+.cvButton:hover {
+  box-shadow: 0 0 10px #ff2d95;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #ff2d95;
+}
+
+@keyframes emailSlide {
+  0% {
+    transform: translateX(-120px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes menuSlide {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@media (min-width: 800px) {
+  .about h1 {
+    font-size: 50pt !important;
+  }
+  .about p {
+    font-size: 18pt !important;
+  }
+  .about .technology p {
+    font-size: 14pt;
+  }
+  p {
+    font-size: 18pt !important;
+    margin: 0 10%;
+  }
+  .menuButton {
+    display: none;
+  }
+  .navBar {
+    display: flex;
+  }
+  #aboutImage {
+    display: flex;
+  }
+  #contactInfo {
+    padding-left: 50px;
+    gap: 50px;
+  }
+  #contactInfo h1 {
+    font-size: 50pt !important;
+  }
+  #contactInfo a {
+    font-size: 18pt !important;
+  }
+}
+@media (min-width: 390px) {
+  .navBar {
+    padding: 10px 50px;
+  }
+  .navBar a {
+    font-size: 18pt;
+  }
+  .about h1 {
+    font-size: 40pt !important;
+  }
+  .about p {
+    font-size: 16pt !important;
+  }
+  .about .technology p {
+    font-size: 16pt;
+  }
+  #contactInfo h1 {
+    font-size: 40pt !important;
+  }
+  #contactInfo a {
+    font-size: 16pt !important;
+  }
+}
+@media (min-width: 650px) {
+  .contactContainer {
+    height: 70dvh;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

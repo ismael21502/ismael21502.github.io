@@ -1,0 +1,240 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  scroll-behavior: smooth;
+}
+* p {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+* h4 {
+  font-size: 2rem;
+}
+* h3 {
+  font-size: 2.5rem;
+}
+* h2 {
+  font-size: 3.125rem;
+}
+* h1 {
+  font-size: 3.906rem;
+}
+
+body {
+  background-color: #121212;
+  font-size: 1.6rem;
+}
+
+.header {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 15px;
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.header i {
+  margin: auto 0;
+}
+
+.title {
+  padding: 10px 10%;
+  padding-bottom: 0;
+}
+
+.dividersContainer {
+  display: flex;
+  width: 80%;
+  height: 3px;
+  margin: 20px auto;
+  margin-bottom: 30px;
+}
+.dividersContainer .projectsDivider1 {
+  width: 15%;
+  height: 100%;
+  background-color: aqua;
+  box-shadow: 0 0 5px rgb(0, 255, 255);
+}
+.dividersContainer .projectsDivider2 {
+  width: 85%;
+  height: 100%;
+  background-color: rgb(20, 126, 126);
+}
+
+.projectsDivider {
+  height: 3px;
+  width: 80%;
+  margin: 20px auto;
+  box-sizing: border-box;
+  background-color: aqua;
+  box-shadow: 0 0 10px rgb(0, 255, 255);
+}
+
+.contentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 50px;
+  width: 80vw;
+  margin: auto;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+
+.viewContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  height: fit-content;
+  min-width: 45%;
+  padding: 0;
+}
+
+.carousel {
+  padding: 10px;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0, 255, 255);
+  background-color: #131313;
+  margin-bottom: 20px;
+}
+
+.carouselImage {
+  min-width: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.imagesViewport {
+  overflow: hidden;
+}
+
+.imagesTrack {
+  display: flex;
+  gap: 10px;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.slidesIndicatorsContainer {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.slidesIndicator {
+  margin-top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 4px solid rgb(40, 40, 40);
+  cursor: pointer;
+}
+
+.slidesIndicator.active {
+  border-color: rgb(1, 201, 201);
+  box-shadow: 0 0 5px aqua;
+  animation-name: slidesIndicatorSelected;
+  animation-duration: 0.5s;
+}
+
+@keyframes slidesIndicatorSelected {
+  0% {
+    filter: opacity(50%);
+    transform: scale(150%);
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    filter: blur(100%);
+  }
+}
+.information {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 0;
+  gap: 10px;
+}
+.information span {
+  font-weight: 600;
+}
+.information .circle {
+  display: inline-flex;
+  background-color: white;
+  border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-right: 0.5rem;
+}
+.information .techChipsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.information .techChipsContainer .techChip {
+  background-color: #414141;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay img {
+  display: block;
+  max-height: 90%;
+  width: 80%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.closeOverlay {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 15px 25px;
+}
+.closeOverlay i {
+  cursor: pointer;
+}
+
+.githubButton {
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+  margin: 0;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #e0006f;
+  cursor: pointer;
+}
+
+.githubButton:hover {
+  box-shadow: 0 0 10px #ff2d95;
+}
+
+/*# sourceMappingURL=projects.css.map */

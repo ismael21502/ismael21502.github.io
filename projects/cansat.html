@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanSat GUI</title>
+    <link rel="stylesheet" href="../styles/projects.css">
+    <script src="https://kit.fontawesome.com/4f183af383.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a class="header" href="../#projects">
+        <i class="fa-solid fa-arrow-left"></i>
+        <p class="projectsHeader">Back to main page</p>
+
+    </a>
+    <h1 class="title">CanSat GUI: Canned satellite data visualizer</h1>
+
+    <div class="dividersContainer">
+        <div class="projectsDivider1"></div>
+        <div class="projectsDivider2"></div>
+    </div>
+
+
+    <div class="contentContainer">
+        <div class="viewContainer">
+            <div class="carousel">
+                <div class="imagesViewport">
+                    <div class="imagesTrack">
+                        <img src="../images/CanSatGUI.PNG" alt="cansatGUI" srcset="" class="carouselImage">
+                        <img src="../images/CometaInterface.jpg" alt="cansatGUI" srcset="" class="carouselImage">
+                    </div>
+                </div>
+                <div class="slidesIndicatorsContainer">
+                    <div class="slidesIndicator active"></div>
+                    <div class="slidesIndicator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="information">
+            <h2>Overview</h2>
+            <p>This graphical user interface (GUI) was developed as a ground station for a CanSat contest. Its main
+                objective is to establish serial communication with the CanSat’s microcontroller in order to receive,
+                process, and visualize the telemetry collected during its mission. The application provides a clear and
+                precise display of the data, allowing the team to efficiently monitor the satellite’s status.</p>
+            <h2>Technologies used</h2>
+            <div class="techChipsContainer">
+                <div class="techChip">
+                    Python
+                </div>
+                <div class="techChip">
+                    Flet
+                </div>
+                <div class="techChip">
+                    AssemblyAI
+                </div>
+                <div class="techChip">
+                    Multi-threading
+                </div>
+            </div>
+            <h2>Key features</h2>
+            <div class="features">
+                <p><span class="circle"></span><span>Automatic Port Detection:</span> The application scans and detects
+                    the COM port connected to the microcontroller, simplifying the initial setup.</p>
+                <p><span class="circle"></span><span>Real-Time Data Visualization:</span> Dynamic charts update in real
+                    time to monitor key variables such as altitude, temperature, and pressure.</p>
+                <p><span class="circle"></span><span>Accurate Data Panel:</span> Displays precise numerical telemetry
+                    values, complementing the graphical information.</p>
+                <p><span class="circle"></span><span>Graph Control:</span> Intuitive buttons allow the user to start or
+                    stop data visualization, making it possible to pause analysis at critical moments.</p>
+                <p><span class="circle"></span><span>Calibration Function (Set Zero):</span> A “zeroing” button
+                    recalibrates altitude and other relative values, ensuring accurate measurements during the mission.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="overlay">
+        <img src="../images/CanSatGUI.PNG" alt="overlayImage" id="overlayImage">
+        <div class="closeOverlay">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+        </div>
+    </div>
+    <script src="../scripts/projects.js"></script>
+</body>
+
+</html>
