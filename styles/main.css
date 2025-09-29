@@ -29,12 +29,6 @@ body {
   font-size: 16pt;
   margin: 0 !important;
 }
-.about img {
-  object-fit: cover;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 550px;
-}
 .about div {
   width: 100%;
 }
@@ -64,6 +58,16 @@ body {
 #aboutImage {
   display: none;
   justify-content: center;
+  box-shadow: 0 0 20px #0cf8f8;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  width: 100%;
+  max-width: min(550px, 35%);
+  margin: 0 auto;
+}
+#aboutImage img {
+  border-radius: 50%;
 }
 
 #aboutText {

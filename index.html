@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -119,4 +120,127 @@
     <script src="scripts/scrollSpy.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/4f183af383.js" crossorigin="anonymous"></script>
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="navItem active" onclick="navItemClick(0)">
+            <a href="#about">About</a>
+        </div>
+        <div class="navItem" onclick="navItemClick(1)">
+            <a href="#projects">Projects</a>
+        </div>
+        <div class="navItem" onclick="navItemClick(2)">
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    </div>
+    <section class="about" id="about">
+        <div class="container" id="aboutText">
+            <h1>Ismael Hernandez</h1>
+            <h2>Robotics Engineer</h2>
+            <p>Robotics Engineering student with hands-on experience in software development and AI models. Strong
+                foundation in object-oriented programming, algorithms, and problem-solving. Skilled in building
+                applications with Python and JavaScript, and passionate about web development with interest in creating
+                scalable and user-friendly applications.</p>
+        </div>
+        <div class="container" id="aboutImage">
+            <img src="images/photo.jpg" alt="placeholder" srcset="">
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h1 class="title">Projects </h1>
+        <div class="cardsContainer">
+            <div class="card">
+                <a href="projects/cansat.html">
+                    <img src="images/CanSatLogo.png" alt="CanSat GUI">
+                    <div class="cardContent">
+                        <h3>CanSat GUI</h3>
+                        <p>User interface for visualizing data received from a canned satellite. Built using
+                            <span>Flet</span> and <span>Python</span>.
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+            <div class="card">
+                <a href="projects/transcriptor.html">
+                    <img src="images/transcriptorLogo.png" alt="Transcriptor">
+                    <div class="cardContent">
+                        <h3>Audio transcriptor App</h3>
+                        <p>A <span>Python</span> application that leverages the <span>AssemblyAI</span> API to
+                            automatically convert audio files into accurate, high-fidelity transcriptions.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="projects/horoscopes.html">
+                    <img src="images/Cosmic whispers.png" alt="Transcriptor">
+                    <div class="cardContent">
+                        <h3>Horoscopes website</h3>
+                        <p>Simple horoscope web application built with <span>Django</span>. Displays a list of zodiac signs,
+                            each with its own detail page showing the daily horoscope.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="contactSection" id="contact">
+        <div class="contactContainer" id="contactInfo">
+            <h1 class="title">Contact Me</h1>
+            <div class="email">
+                <i class="fa-regular fa-paper-plane fa-2x"></i>
+                <a onclick="copyEmail()">ismael21502@gmail.com</a>
+            </div>
+            <div class="iconsContainer">
+                <div class="contactIcon">
+                    <a
+                        href="https://www.linkedin.com/in/jaime-ismael-hernandez-navarro-88244b292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <i class="fa-brands fa-linkedin fa-2x" style="color: #0e76a8;"></i>
+                    </a>
+                </div>
+                <div class="contactIcon">
+                    <a href="https://wa.me/3314161781" target="_blank">
+                        <i class="fa-brands fa-whatsapp fa-2x" style="color: #25d366;"></i>
+                    </a>
+                </div>
+                <div class="contactIcon">
+                    <a href="https://github.com/ismael21502">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="cv.pdf" download="Ismael_Hernandez_CV.pdf" class="cvButton">
+                Download CV
+            </a>
+        </div>
+        <div class="contactContainer">
+            <form action="https://formsubmit.co/ismael21502@gmail.com" method="POST" class="contactForm">
+                <input class="inputs" type="text" id="name" name="name" placeholder="Your name" required>
+                <input class="inputs" type="email" id="email" name="email" placeholder=" Your email" required>
+                <textarea class="inputs" id="message" name="message" rows="5" placeholder="Your message"
+                    required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="scripts/clickManager.js"></script>
+    <script src="scripts/scrollSpy.js"></script>
+</body>
+
+>>>>>>> 74382a690e2adea40de68aa86381b7a655999939
 </html>
