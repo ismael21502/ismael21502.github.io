@@ -34,10 +34,10 @@ indicatorsContainer.addEventListener("click", function (event) {
     clickedIndicator.classList.add("active");
 
     // Definir gap
-    const gap = index === 0 ? "0px" : "10px";
+    const gap = index === 0 ? 0 : 10;
 
     // Mover track
-    track.style.transform = `translateX(calc(-${100 * index}% - ${gap}))`;
+    track.style.transform = `translateX(calc(-${100 * index}% - ${gap*index}px))`;
 });
 
 // --- Lógica del overlay ---
