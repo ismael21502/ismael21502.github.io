@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot control panel</title>
+    <link rel="stylesheet" href="../styles/projects.css">
+    <script src="https://kit.fontawesome.com/4f183af383.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <a class="header" href="../#projects">
+        <i class="fa-solid fa-arrow-left"></i>
+        <p class="projectsHeader">Back to main page</p>
+
+    </a>
+    <h1 class="title">Robotic arm control panel</h1>
+
+    <div class="dividersContainer">
+        <div class="projectsDivider1"></div>
+        <div class="projectsDivider2"></div>
+    </div>
+
+
+    <div class="contentContainer">
+        <div class="viewContainer">
+            <div class="carousel">
+                <div class="imagesViewport">
+                    <div class="imagesTrack">
+                        <img src="../images/TranscriptorMain.PNG" alt="Robot control" srcset="" class="carouselImage">
+                    </div>
+                </div>
+                <div class="slidesIndicatorsContainer">
+                    <div class="slidesIndicator active"></div>
+                    <div class="slidesIndicator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="information">
+            <h2>Overview</h2>
+            <p>Cross-platform desktop application designed to provide an intuitive and flexible way to control a robotic
+                arm. The tool allows users to interact with the robot through both joint-space and Cartesian-space
+                controls, visualize the arm’s current pose in real time using an integrated 3D widget, and actuate the
+                gripper with precision. Additionally, it includes a JSON-based system to create, store, update, delete,
+                and replay predefined positions, enabling repeatable motions and easier experimentation. The application
+                also features a live console panel that streams logs from a FastAPI backend, improving debugging,
+                monitoring, and overall system transparency during operation.</p>
+            <h2>Technologies used</h2>
+            <div class="techChipsContainer">
+                <div class="techChip">
+                    Python
+                </div>
+                <div class="techChip">
+                    FastAPI
+                </div>
+                <div class="techChip">
+                    React
+                </div>
+                <div class="techChip">
+                    TailwindCSS
+                </div>
+            </div>
+            <h2>Key features</h2>
+            <div class="features">
+                <p><span class="circle"></span><span>Cross-platform interface:</span> Designed a robotic arm control
+                    interface using React and TailwindCSS, later packaged as a desktop application with Tauri.</p>
+                <p><span class="circle"></span><span>Motion control:</span> Implemented joint-space and Cartesian-space
+                    sliders, including precise gripper actuation.</p>
+                <p><span class="circle"></span><span>3D visualization:</span> Added a real-time 3D widget to display the
+                    robotic arm’s current pose.</p>
+                <p><span class="circle"></span><span>Position management:</span> Developed a JSON-based CRUD system to
+                    create, update, delete, and replay predefined arm positions.</p>
+                <p><span class="circle"></span><span>Live console:</span> Built a real-time console panel that renders
+                    logs streamed from a FastAPI backend.</p>
+            </div>
+        </div>
+    </div>
+    <div class="overlay">
+        <img src="../images/CanSatGUI.PNG" alt="overlayImage" id="overlayImage">
+        <div class="closeOverlay">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+        </div>
+    </div>
+    <script src="../scripts/projects.js"></script>
+</body>
