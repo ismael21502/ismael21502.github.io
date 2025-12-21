@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 35px;
+    height: 50px;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: large;
+    color: rgb(147, 146, 163);
+    background-color: rgba(10, 10, 17, 0.4);
+    border-bottom: 1px solid;
+    border-color: rgba(29, 39, 52);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.tabNav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    color: rgb(147, 146, 163);
+}
+
+.tabNav a {
+    color: rgb(147, 146, 163);
+}
+
+.tabNav .active {
+    color: rgb(45, 209, 209);
+}
+
+.tabNav a:hover {
+    color: rgb(45, 209, 209);
+    text-shadow: 0 0 2px rgb(45, 209, 209);
+}

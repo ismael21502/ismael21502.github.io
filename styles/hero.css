@@ -1,0 +1,149 @@
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    padding-top: 70px;
+    gap: 25px;
+    /* min-height: 100vh; */
+    box-sizing: border-box;
+}
+
+.openToWork {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 20px;
+    border: 1px solid rgb(45, 209, 209);
+    background-color: rgba(45, 209, 209, 0.1);
+    color: rgb(45, 209, 209);
+    padding: 7px 15px;
+    width: fit-content;
+    font-size: 0.8rem;
+}
+
+.heroCircle {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: rgb(45, 209, 209);
+}
+
+.heroTitle {
+    font-size: 5rem;
+}
+
+.typeWriter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: fit-content;
+    background: linear-gradient(90deg, rgb(45, 209, 209), rgb(250, 0, 250));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.typeWriterCursor {
+    width: 7px;
+    height: 5rem;
+    background-color: rgb(45, 209, 209);
+    animation: 1s cursorBlink steps(1) infinite;
+}
+
+.heroSubtitle {
+    font-size: 2rem;
+}
+
+.heroSubtitle span {
+    color: rgb(45, 209, 209);
+}
+
+.heroButtonsContainer {
+    display: flex;
+    gap: 15px;
+    width: fit-content;
+}
+
+.heroButton {
+    display: flex;
+    gap: 5px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 1px solid;
+}
+
+.heroButton svg{
+    width: 1.2rem;
+}
+
+.solidButton {
+    background-color: rgb(45, 209, 209);
+    color: black;
+}
+
+.solidButton:hover {
+    cursor: pointer;
+    background-color: white;
+    border-color: transparent;
+    box-shadow: 0 0 5px rgb(45, 209, 209);
+    transform: translateY(-5px);
+    transition: transform 0.1s;
+}
+
+.hollowButton {
+    border-color: rgb(250, 0, 250);
+    color: rgb(250, 0, 250);
+}
+
+.hollowButton:hover {
+    cursor: pointer;
+    background-color: rgb(250, 0, 250);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 0 5px rgb(250, 0, 250);
+    transform: translateY(-5px);
+    transition: transform 0.1s;
+}
+
+.separator {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(29, 39, 52);
+}
+
+
+.techStack {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(147, 146, 163);
+    gap: 20px;
+}
+
+.stackIconsContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.stackIconsContainer svg{
+    width: 1.8rem;
+    fill: rgb(147, 146, 163);
+}
+
+@keyframes cursorBlink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    50.01%,
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,49 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 5%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    color: rgb(147, 146, 163);
+}
+
+.contactTitle{
+    color: white;
+}
+
+.contactTitle span{
+    color: rgb(250,0,250);
+}
+
+.contactActions{
+    display: flex;
+    gap: 4rem;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.email{
+    display: inline-flex;
+    padding: 10px 15px;
+    background-color: rgb(17, 25, 39);
+    border: 1px solid rgb(46, 54, 68);
+    border-radius: 15px;
+
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.email svg{
+    width: 1rem;
+}
+
+.downloadCV{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.downloadCV svg{
+    width: 1rem;
+}
