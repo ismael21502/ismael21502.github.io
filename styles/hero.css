@@ -32,15 +32,38 @@
 }
 
 .typeWriter {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
-    width: fit-content;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.typeWriter h1 {
+    font-size: 5rem;
+}
+
+#typingText {
+    overflow: hidden;
     background: linear-gradient(90deg, rgb(45, 209, 209), rgb(250, 0, 250));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+#typingText::after {
+    content: '';
+    display: inline-block;
+    width: 0.08em;
+    height: 1em;
+    background: rgb(45, 209, 209);
+    margin-left: 0.1em;
+    vertical-align: -0.12em;
+}
+
+#typingText.blink::after{
+    animation: cursorBlink 1s steps(1) infinite;
 }
 
 .typeWriterCursor {
@@ -73,7 +96,7 @@
     border: 1px solid;
 }
 
-.heroButton svg{
+.heroButton svg {
     width: 1.2rem;
 }
 
@@ -132,12 +155,13 @@
     gap: 10px;
 }
 
-.stackIconsContainer svg{
+.stackIconsContainer svg {
     width: 1.8rem;
     fill: rgb(147, 146, 163);
 }
 
 @keyframes cursorBlink {
+
     0%,
     50% {
         opacity: 1;
