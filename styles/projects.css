@@ -35,6 +35,7 @@
 
 .projectsFilterItem.active {
     color: white;
+    border-color: white;
 }
 
 .projectsFilterItem:hover {

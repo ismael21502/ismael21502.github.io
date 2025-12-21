@@ -1,4 +1,4 @@
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     padding: 50px 5%;
@@ -9,12 +9,12 @@
     color: rgb(147, 146, 163);
 }
 
-.contactTitle{
+.contactTitle {
     color: white;
 }
 
-.contactTitle span{
-    color: rgb(250,0,250);
+.contactTitle span {
+    color: rgb(250, 0, 250);
 }
 
 .contactContent {
@@ -23,43 +23,76 @@
     gap: 5%;
 }
 
-.contactActions{
+.contactActions {
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     font-size: 1rem;
     align-items: center;
 }
 
-.email{
+.email {
     display: inline-flex;
     padding: 10px 15px;
     background-color: rgb(17, 25, 39);
     border: 1px solid rgb(46, 54, 68);
-    border-radius: 15px;
+    border-radius: 9999999px;
 
     align-items: center;
     gap: 0.5rem;
 }
 
-.email svg{
+.email:hover {
+    cursor: pointer;
+    border-color: rgb(45, 209, 209);
+    color: white;
+}
+
+.email:hover svg:first-child {
+    color: rgb(45, 209, 209);
+}
+
+.email:hover svg:last-child {
+    color: white;
+}
+
+.email svg {
     width: 1rem;
 }
 
 .email svg:first-child {
-    color: red;
+    color: rgb(147, 146, 163);
 }
 
 .email svg:last-child {
-    color: #888;
+    color: transparent;
 }
 
-.downloadCV{
+.downloadCV {
     display: inline-flex;
+    padding: 10px 15px;
+    background-color: rgb(17, 25, 39);
+    border: 1px solid rgb(46, 54, 68);
+    border-radius: 9999999px;
+
     align-items: center;
-    gap: 10px;
+    gap: 0.5rem;
 }
 
-.downloadCV svg{
+.downloadCV:hover {
+    cursor: pointer;
+    border-color: rgb(250, 0, 250);
+    color: white
+}
+
+.downloadCV:hover svg {
+    color: rgb(250, 0, 250);
+}
+
+.downloadCV:hover svg:last-child {
+    color: white;
+}
+
+.downloadCV svg {
     width: 1rem;
 }
 
@@ -69,6 +102,127 @@
     gap: 25px;
 }
 
-.socialMedia svg{
-    width: 3rem;
+.socialMedia svg {
+    width: 2rem;
+    color: rgb(174, 171, 197);
+    transition: transform 0.1s ease-in-out;
+}
+
+.socialMedia svg:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(1.08);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.inputWrapper input {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 12px 12px 44px;
+    /* espacio para el icono */
+    border-radius: 10px;
+    border: 1px solid #444;
+    background: #0f0f14;
+    color: white;
+    font-size: 1rem;
+}
+
+.inputWrapper textarea {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    /* espacio para el icono */
+    border-radius: 10px;
+    border: 1px solid #444;
+    background: #0f0f14;
+    color: white;
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 150px;
+}
+
+.inputWrapper textarea:focus {
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 2px rgb(45, 209, 209);
+}
+
+.inputWrapper input:focus {
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 2px rgb(45, 209, 209);
+}
+
+.inputWrapper:focus-within .inputIcon {
+    color: rgb(45, 209, 209);
+}
+
+.inputIcon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #888;
+    pointer-events: none;
+    /* 🔑 clave */
+}
+
+.sendButton {
+    background: none;
+    border: none;
+    position: relative;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #0f0f14;
+    color: rgb(174, 171, 197);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.sendButton:hover {
+    color: white;
+    background:
+        linear-gradient(135deg,
+            rgba(45, 209, 209, 0.08),
+            rgba(250, 0, 250, 0.08)),
+        #0f0f14;
+}
+
+.sendButton::after {
+    position: absolute;
+    content: "";
+    inset: -2px;
+    border-radius: 10px;
+    background: linear-gradient(165deg,
+            rgb(45, 209, 209),
+            rgb(250, 0, 250));
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.sendButton:hover::after {
+    opacity: 1;
 }
