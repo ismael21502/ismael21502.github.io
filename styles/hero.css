@@ -34,6 +34,7 @@
 .typeWriter {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
     width: fit-content;
     background: linear-gradient(90deg, rgb(45, 209, 209), rgb(250, 0, 250));

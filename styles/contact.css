@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 50px 5%;
+    gap: 50px;
     min-height: 100vh;
     box-sizing: border-box;
     font-size: 1.5rem;
@@ -14,6 +15,12 @@
 
 .contactTitle span{
     color: rgb(250,0,250);
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
 }
 
 .contactActions{
@@ -38,6 +45,14 @@
     width: 1rem;
 }
 
+.email svg:first-child {
+    color: red;
+}
+
+.email svg:last-child {
+    color: #888;
+}
+
 .downloadCV{
     display: inline-flex;
     align-items: center;
@@ -46,4 +61,14 @@
 
 .downloadCV svg{
     width: 1rem;
+}
+
+.socialMedia {
+    margin-top: 5%;
+    display: flex;
+    gap: 25px;
+}
+
+.socialMedia svg{
+    width: 3rem;
 }
