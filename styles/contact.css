@@ -52,7 +52,7 @@
     color: rgb(45, 209, 209);
 }
 
-.email:hover svg:last-child {
+.email:hover .copyIcon {
     color: white;
 }
 
@@ -64,8 +64,20 @@
     color: rgb(147, 146, 163);
 }
 
-.email svg:last-child {
+.email .copyIcon {
     color: transparent;
+}
+
+.email .checkIcon{
+    display: none;
+}
+
+.email.copied .copyIcon{
+    display: none;
+}
+
+.email.copied .checkIcon{
+    display: block;
 }
 
 .downloadCV {

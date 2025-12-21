@@ -1,18 +1,26 @@
-document.addEventListener('DOMContentLoaded', ()=> {
+
+document.addEventListener("DOMContentLoaded", () => {
     initCopyEmail();
-    initDownloadCV();
-})
+    
+    // initDownloadCV(); // si ya existe o la crearás
+});
 
 function initCopyEmail() {
     const copyBtn = document.querySelector("[data-copy-email]");
+    console.log(copyBtn)
     if (!copyBtn) return;
 
     copyBtn.addEventListener("click", copyEmail);
 }
 
 function copyEmail() {
-    navigator.clipboard.writeText("ismael21502@gmail.com").then(function () {
-        alert('Email copiado correctamente');
+    const copyBtn = document.querySelector("[data-copy-email]");
+    navigator.clipboard.writeText("ismael21502@gmail.com").then( () => {
+        copyBtn.classList.add("copied");
+
+        setTimeout(() => {
+            copyBtn.classList.remove("copied");
+        }, 1000);
     }).catch(function (error) {
         console.error('Error al copiar el texto: ', error);
     });

@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
             
             link.classList.remove('active');
             if (link.getAttribute('href') === "#" + current) {
-                console.log(link)
                 link.classList.add('active');
             }
         });
