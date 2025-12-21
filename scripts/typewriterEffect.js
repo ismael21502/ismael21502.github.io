@@ -1,5 +1,5 @@
 const typingTextElement = document.getElementById('typingText');
-const words = [ 'Web Developer', 'Python Enthusiast'];
+const words = [ 'Web Developer', 'Python Enthusiast', 'Robotics engineer'];
 let wordIndex = 0;
 
 let currentCharIndex = 0;
@@ -9,9 +9,8 @@ function typeWriterEffect() {
     typingText.classList.remove("blink");
     if (currentCharIndex < currentWord.length) {
         typingTextElement.textContent = currentWord.slice(0, currentCharIndex + 1);
-        console.log(typingTextElement.textContent);
         currentCharIndex += 1;
-        setTimeout(typeWriterEffect, 150);
+        setTimeout(typeWriterEffect, 125);
     } 
     else {
         typingText.classList.add("blink");
@@ -25,11 +24,11 @@ function eraseEffect() {
     if (currentCharIndex > 0) {
         typingTextElement.textContent = currentWord.slice(0, currentCharIndex - 1);
         currentCharIndex -= 1;
-        setTimeout(eraseEffect, 100);
+        setTimeout(eraseEffect, 75);
     } else{
         wordIndex = (wordIndex + 1) % words.length;
         typingText.classList.add("blink");
-        setTimeout(typeWriterEffect, 2500);
+        setTimeout(typeWriterEffect, 1500);
     }
 }
 

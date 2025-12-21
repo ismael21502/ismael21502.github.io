@@ -17,11 +17,20 @@
 <body>
     <div class="header">
         <!-- find a better name for this section -->
-        <div class="backmenu">
+        <a class="tagline" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot-icon lucide-bot">
+                <path d="M12 8V4H8" />
+                <rect width="16" height="12" x="4" y="8" rx="2" />
+                <path d="M2 14h2" />
+                <path d="M20 14h2" />
+                <path d="M15 13v2" />
+                <path d="M9 13v2" />
+            </svg>
             <code>
-                &lt;Dev/&gt;
+                <span>&lt;</span>Robotics & software<span>/&gt;</span>
             </code>
-        </div>
+        </a>
 
         <div class="tabNav">
             <a href="#about" class="active">
@@ -35,7 +44,7 @@
             </a>
         </div>
     </div>
-    <div class="heroSection" id="hero">
+    <section class="heroSection" id="hero">
         <div class="openToWork">
             <div class="circle heroCircle">
 
@@ -96,8 +105,8 @@
                 </svg>
             </div>
         </div>
-    </div>
-    <div class="about" id="about">
+    </section>
+    <section class="about" id="about">
         <div class="aboutImage">
             <div class="imageWrapper">
                 <img src="./images/photo.jpg" alt="Selfie">
@@ -113,9 +122,9 @@
                 No solo escribo código; diseño soluciones que escalan. Cuando no estoy programando, probablemente estoy
                 explorando nuevas librerías de IA o contribuyendo a proyectos Open Source.</p>
         </div>
-    </div>
+    </section>
 
-    <div class="projects" id="projects">
+    <section class="projects" id="projects">
         <h1 class="projectsTitle">My <span>projects</span></h1>
         <div class="projectsFilter">
             <div class="projectsFilterItem active">
@@ -129,7 +138,7 @@
             </div>
         </div>
         <div class="projectCardsContainer">
-            <div class="projectCard">
+            <a class="projectCard" href="./projects/robot_control.html">
                 <div class="projectImageWrapper">
                     <img src="./images/RobotControl.PNG" alt="Robot control panel">
                 </div>
@@ -164,7 +173,7 @@
                     </div>
                 </div>
 
-            </div>
+            </a>
             <div class="projectCard">
                 <div class="projectImageWrapper">
                     <img src="./images/RobotControl.PNG" alt="Robot control panel">
@@ -236,9 +245,9 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
-    <div class="contact" id="contact">
+    <section class="contact" id="contact">
         <h1 class="contactTitle">
             <span>Contact</span> me
         </h1>
@@ -246,7 +255,7 @@
         <div class="contactContent">
             <div>
                 <div class="contactActions">
-                    <div class="email">
+                    <button name="data-copy-email" class="email">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-mail-icon lucide-mail">
@@ -262,7 +271,7 @@
                             <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
                             <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
                         </svg>
-                    </div>
+                    </button>
                     <!-- convert to button or a -->
                     <div class="downloadCV">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -335,13 +344,21 @@
                     </div>
                 </div>
                 <button class="sendButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send">
+                        <path
+                            d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+                        <path d="m21.854 2.147-10.94 10.939" />
+                    </svg>
                     Send message
+                    
                 </button>
             </div>
         </div>
-    </div>
+    </section>
 
     <script src="./scripts/typewriterEffect.js"></script>
+    <script src="./scripts/scrollSpy.js"></script>
 </body>
 
 </html>

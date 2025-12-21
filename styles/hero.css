@@ -1,8 +1,9 @@
 .heroSection {
     display: flex;
+    flex: 1;
     flex-direction: column;
     padding: 5%;
-    padding-top: 70px;
+    padding-top: 100px;
     gap: 25px;
     /* min-height: 100vh; */
     box-sizing: border-box;
@@ -37,7 +38,7 @@
     flex-direction: column;
     gap: 10px;
     font-size: 5rem;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .typeWriter h1 {
@@ -46,6 +47,7 @@
 
 #typingText {
     overflow: hidden;
+    width: fit-content;
     background: linear-gradient(90deg, rgb(45, 209, 209), rgb(250, 0, 250));
     -webkit-background-clip: text;
     background-clip: text;
@@ -97,7 +99,7 @@
 }
 
 .heroButton svg {
-    width: 1.2rem;
+    width: 1em;
 }
 
 .solidButton {
@@ -133,7 +135,7 @@
     display: flex;
     margin: auto;
     width: 80%;
-    height: 1px;
+    height: 2px;
     background-color: rgba(29, 39, 52);
 }
 
@@ -152,11 +154,11 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 30px;
 }
 
 .stackIconsContainer svg {
-    width: 1.8rem;
+    width: 2.3rem;
     fill: rgb(147, 146, 163);
 }
 

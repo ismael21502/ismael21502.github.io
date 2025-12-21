@@ -7,10 +7,10 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 35px;
-    height: 50px;
+    height: 80px;
     align-items: center;
     box-sizing: border-box;
-    font-size: large;
+    font-size: 1.5rem;
     color: rgb(147, 146, 163);
     background-color: rgba(10, 10, 17, 0.4);
     border-bottom: 1px solid;
@@ -39,4 +39,33 @@
 .tabNav a:hover {
     color: rgb(45, 209, 209);
     text-shadow: 0 0 2px rgb(45, 209, 209);
+}
+
+.tagline{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.tagline:hover{
+    cursor: pointer;
+}
+
+.tagline:hover svg{
+    transform: rotate(10deg);
+}
+.tagline svg {
+    width: 1.3em;
+    color: rgb(45, 209, 209);
+    transition: transform 0.1s ease;
+}
+
+.tagline span:first-child {
+    color: rgb(250,0,250);
+}
+
+.tagline span:last-child{
+    color: rgb(45, 209, 209);
 }

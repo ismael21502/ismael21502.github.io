@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.navBar a');
-
+    const navLinks = document.querySelectorAll('.tabNav a');
     function scrollSpy() {
         let current = '';
         sections.forEach(section => {
@@ -10,11 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 current = section.getAttribute('id');
             }
         });
-
+        
         navLinks.forEach(link => {
-            link.parentElement.classList.remove('active');
+            
+            link.classList.remove('active');
             if (link.getAttribute('href') === "#" + current) {
-                link.parentElement.classList.add('active');
+                console.log(link)
+                link.classList.add('active');
             }
         });
 

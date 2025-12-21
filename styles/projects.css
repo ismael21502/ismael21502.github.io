@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     padding: 5%;
+    padding-top: 80px;
     min-height: 100vh;
     box-sizing: border-box;
     font-size: 1.5rem;
     color: rgb(147, 146, 163);
-    gap: 50px;
+    gap: 30px;
 }
 
 .projectsTitle {

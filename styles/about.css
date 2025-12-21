@@ -59,14 +59,11 @@
     transition: opacity 0.6s ease;
 }
 
-.imageWrapper:hover{
-    cursor: pointer;
-}
-
 .imageWrapper img:hover{
     filter: none;
 }
 
 .imageWrapper:hover::after{
     opacity: 1;
+    inset: -4px;
 }
