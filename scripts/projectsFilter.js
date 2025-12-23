@@ -18,11 +18,28 @@ function setActiveItems(items, activeItem) {
 }
 
 function filterCards(cards, filter) {
-    cards.forEach(card => {
+    cards.forEach((card, i) => {
         const categories = card.dataset.category.split(" ");
         const shouldShow = filter === "all" || categories.includes(filter);
-        card.classList.toggle("hidden", !shouldShow);
+        setTimeout(() => {
+            if (!shouldShow) hideCard(card)
+            else showCard(card)
+        }, i * 40);
     });
+}
+
+function hideCard(card) {
+    card.classList.add("hiding");
+    setTimeout(() => {
+        card.classList.add("hidden");
+        card.classList.remove("hiding");
+    }, 150);
+}
+
+function showCard(card) {
+    card.classList.remove("hidden");
+    card.offsetHeight;
+    card.classList.remove("hiding");
 }
 
 initProjectsFilter()

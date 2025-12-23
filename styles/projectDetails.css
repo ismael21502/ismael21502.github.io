@@ -1,0 +1,278 @@
+body {
+    color: rgb(147, 146, 163);
+    padding: 15px 50px;
+    font-size: 1.5rem;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+h1 {
+    color: white;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.backToMain {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+    color: rgb(147, 146, 163);
+}
+
+.backToMain:hover {
+    color: rgb(45, 209, 209);
+}
+
+.backToMain:hover svg {
+    transform: translateX(-5px);
+}
+
+.backToMain svg {
+    width: 1em;
+    transition: transform 0.2s ease;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(24, 28, 42);
+    border-radius: 15px;
+
+    background-color: rgba(19, 19, 31);
+}
+
+.carousel {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+.carouselViewport {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    max-height: 60vh;
+}
+
+.carousel img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carouselArrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carouselArrows button {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(147, 146, 163, 0.3);
+    font-size: 3rem;
+    border-radius: 99999px;
+    padding: 10px 0;
+}
+
+.carouselArrows button:hover {
+    background-color: rgb(45, 209, 209);
+    color: black;
+    cursor: pointer;
+}
+
+.carouselArrows svg {
+    width: 1em;
+}
+
+.carouselLeft {
+    margin-left: 15px;
+}
+
+.carouselRight {
+    margin-right: 15px;
+}
+
+.carouselDots {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    gap: 10px;
+}
+
+.carouselDot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(147, 146, 163);
+    border-radius: 999999px;
+    transition: all 0.3s ease-in-out;
+}
+
+.carouselDot.active {
+    background-color: rgb(45, 209, 209);
+    width: 25px;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    gap: 5%;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 15px;
+}
+
+.projectMeta {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.subtitle svg {
+    width: 1em;
+    /* color: rgb(45, 209, 209); */
+}
+
+.descriptionIcon {
+    color: rgb(45, 209, 209);
+}
+
+.featuresIcon {
+    color: rgb(250, 0, 250);
+}
+
+.mainFeatures {
+    list-style: none;
+}
+
+.mainFeatures li {
+    display: flex;
+    gap: 10px;
+}
+
+.mainFeatures svg {
+    margin-top: 0.3em;
+    flex-shrink: 0;
+    width: 1em;
+    color: rgb(45, 209, 209);
+}
+
+.techStack {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid rgba(24, 28, 42);
+    border-radius: 10px;
+    background-color: rgba(18, 21, 35);
+    color: white;
+}
+
+.techStackList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.techTag {
+    display: flex;
+    gap: 5px;
+    background-color: rgba(29, 35, 50);
+    border: 1px solid rgba(40, 50, 65);
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 5px 15px;
+    color: rgb(45, 209, 209);
+}
+
+.techTag svg {
+    width: 1em;
+    font-size: 1em;
+    fill: rgb(45, 209, 209);
+}
+
+.metaButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.metaButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.solidButton {
+    background-color: rgb(45, 209, 209);
+    border: 2px solid rgb(45, 209, 209);
+    color: black;
+}
+
+.solidButton:hover {
+    cursor: pointer;
+    background-color: white;
+    border-color: transparent;
+    box-shadow: 0 0 5px rgb(45, 209, 209);
+    transform: translateY(-5px);
+    transition: transform 0.1s;
+}
+
+.hollowButton {
+    border: 2px solid rgb(250, 0, 250);
+    color: rgb(250, 0, 250);
+}
+
+.hollowButton:hover {
+    cursor: pointer;
+    background-color: rgb(250, 0, 250);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 0 5px rgb(250, 0, 250);
+    transform: translateY(-5px);
+    transition: transform 0.1s;
+}
+
+.metaButton svg {
+    width: 1em;
+}
+
+.hollowButton svg {
+    fill: rgb(250, 0, 250);
+}
+
+.hollowButton:hover svg {
+    fill: white;
+}
