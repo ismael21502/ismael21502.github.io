@@ -61,13 +61,28 @@ h1 {
     display: flex;
     justify-content: center;
     position: relative;
-    max-width: 100%;
-    max-height: 60vh;
+    width: 100%;
+    height: 60vh;
+}
+
+.carouselTrack {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .carousel img {
-    max-width: 100%;
-    max-height: 100%;
+    position: absolute;
+    object-fit: contain;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel img.active{
+    opacity: 1;
 }
 
 .carouselArrows {
@@ -114,16 +129,25 @@ h1 {
 }
 
 .carouselDot {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     background-color: rgb(147, 146, 163);
     border-radius: 999999px;
     transition: all 0.3s ease-in-out;
 }
 
+.carouselDot:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .carouselDot.active {
     background-color: rgb(45, 209, 209);
-    width: 25px;
+    width: 20px;
+}
+
+.carouselDot.active:hover {
+    transform: scale(1);
 }
 
 .projectContent {
