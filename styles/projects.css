@@ -61,6 +61,10 @@
     transition: transform 0.2s ease-in-out;
 }
 
+.projectCard.hidden{
+    display: none;
+}
+
 .projectCard:hover{
     border-color: rgb(45, 209, 209);
     box-shadow: 0 0 5px rgb(45, 209, 209);

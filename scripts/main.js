@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function initCopyEmail() {
     const copyBtn = document.querySelector("[data-copy-email]");
-    console.log(copyBtn)
     if (!copyBtn) return;
 
     copyBtn.addEventListener("click", copyEmail);

@@ -112,11 +112,17 @@
 .socialMedia {
     margin-top: 5%;
     display: flex;
+    padding: 0;
     gap: 25px;
 }
 
+.socialIcon{
+    width: 40px;
+    display: inline-flex;
+}
+
 .socialMedia svg {
-    width: 2rem;
+    width: 100%;
     color: rgb(174, 171, 197);
     transition: transform 0.1s ease-in-out;
 }
@@ -151,7 +157,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 12px 12px 12px 44px;
-    /* espacio para el icono */
+    
     border-radius: 10px;
     border: 1px solid #444;
     background: #0f0f14;
@@ -164,7 +170,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 12px;
-    /* espacio para el icono */
+    
     border-radius: 10px;
     border: 1px solid #444;
     background: #0f0f14;
