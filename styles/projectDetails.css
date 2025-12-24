@@ -76,12 +76,29 @@ h1 {
     position: absolute;
     object-fit: contain;
     opacity: 0;
+    filter: blur(2px);
     width: 100%;
     height: 100%;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, filter 0.1s ease;
 }
 
 .carousel img.active{
+    filter: none;
+    opacity: 1;
+}
+
+.carousel video {
+    position: absolute;
+    object-fit: contain;
+    opacity: 0;
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out, filter 0.1s ease;
+}
+
+.carousel video.active{
+    filter: none;
     opacity: 1;
 }
 
@@ -138,7 +155,8 @@ h1 {
 
 .carouselDot:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    background-color: rgb(204, 203, 218);
 }
 
 .carouselDot.active {

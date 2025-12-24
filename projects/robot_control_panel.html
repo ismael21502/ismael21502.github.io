@@ -23,11 +23,12 @@
         <div class="carousel">
             <div class="carouselViewport">
                 <div class="carouselTrack">
-                    <img class="active" src="../images/RobotControl.PNG" alt="Robot control" srcset="">
-                    <img src="../images/RobotControl2.PNG" alt="Robot control" srcset="">
+                    <video class="active" src="../videos/Grabacion.mp4" muted loop playsinline preload="metadata"></video>
+                    <img src="../images/Modular robot/RobotControl.PNG" alt="Robot control 1" srcset="">
+                    <img src="../images/Modular robot/RobotControl2.PNG" alt="Robot control 2" srcset="">
+                    <img src="../images/Modular robot/RobotControl3.PNG" alt="Robot control 3" srcset="">
                 </div>
             </div>
-
             <div class="carouselArrows">
                 <button class="carouselLeft">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -47,7 +48,10 @@
             <div class="carouselDots">
                 <button class="carouselDot active"></button>
                 <button class="carouselDot"></button>
+                <button class="carouselDot"></button>
+                <button class="carouselDot"></button>
             </div>
+
         </div>
         <div class="projectContent">
             <div class="projectInfo">
@@ -66,15 +70,17 @@
                     <p>Description</p>
                 </div>
                 <p>
-                    Modular robotics platform focused on scalable architecture, reusable components and clear separation between hardware
-                    logic and control interfaces. The project combines mechanical modularity with a software-driven control
+                    Modular robotics platform focused on scalable architecture, reusable components and clear separation
+                    between hardware
+                    logic and control interfaces. The project combines mechanical modularity with a software-driven
+                    control
                     interface, allowing users to
                     configure, control, and extend the robot easily.
                 </p>
                 <div class="subtitle">
-                    <svg class="featuresIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-circle-star-icon lucide-circle-star">
+                    <svg class="featuresIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-circle-star-icon lucide-circle-star">
                         <path
                             d="M11.051 7.616a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.867l-1.156-1.152a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z" />
                         <circle cx="12" cy="12" r="10" />
@@ -98,8 +104,8 @@
                         </svg>
                         <p>Modular hardware design allowing different configurations and extensions</p>
                     </li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
                             <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                             <path d="m9 11 3 3L22 4" />
@@ -155,7 +161,7 @@
                     </div>
                 </div>
                 <div class="metaButtons">
-                    <button class="metaButton solidButton">
+                    <!-- <button class="metaButton solidButton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-rocket-icon lucide-rocket">
@@ -166,16 +172,16 @@
                             <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
                             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
                         </svg>
-                        <p>Ver demo</p>
-                    </button>
-                    <button class="metaButton hollowButton">
+                        <p>Demo</p>
+                    </button> -->
+                    <a class="metaButton hollowButton" href="https://github.com/ismael21502/modular-manipulator">
                         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <title>GitHub</title>
                             <path
                                 d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
                         </svg>
-                        <p>Ver código fuente</p>
-                    </button>
+                        <p>Source code</p>
+                    </a>
                 </div>
 
             </div>
