@@ -171,6 +171,7 @@ h1 {
 .projectContent {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 3%;
     gap: 5%;
 }
@@ -185,6 +186,7 @@ h1 {
 .projectMeta {
     display: flex;
     flex-direction: column;
+    min-width: 200px;
     flex: 1;
     gap: 30px;
 }
