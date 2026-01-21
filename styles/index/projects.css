@@ -83,7 +83,7 @@
 .projectCard:hover {
     border-color: rgb(45, 209, 209);
     box-shadow: 0 0 5px rgb(45, 209, 209);
-    transform: scale(1.03);
+    /* transform: scale(1.03); */
     cursor: pointer;
 }
 
