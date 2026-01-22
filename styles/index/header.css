@@ -3,14 +3,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 35px;
     height: 80px;
     align-items: center;
     box-sizing: border-box;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.75rem);
     color: rgb(147, 146, 163);
     background-color: rgba(10, 10, 17, 0.4);
     border-bottom: 1px solid;
@@ -68,4 +68,28 @@
 
 .tagline span:last-child{
     color: rgb(45, 209, 209);
+}
+
+.menuButton {
+    background: none;
+    padding: 5px;
+    border: none;
+    outline: none;
+    display: none;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .tabNav {
+        display: none;
+    }
+    .menuButton {
+        display: flex;
+    }
+    .header{
+        padding: 5px 15px;
+        height: 60px;
+    }
 }

@@ -135,6 +135,7 @@
 .separator {
     display: flex;
     margin: auto;
+    margin-top: 15px;
     width: 80%;
     height: 2px;
     background-color: rgba(29, 39, 52);
@@ -187,6 +188,7 @@
     .heroSection {
         text-align: center;
         align-items: center;
+        padding-top: 70px;
     }
 
     .openToWork {
