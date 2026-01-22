@@ -43,11 +43,7 @@
                 Contact me
             </a>
         </div>
-
-        <button 
-        id="menuButton"
-        class="menuButton"
-            onclick="console.log('OLA')">
+        <button id="menuButton" class="menuButton" aria-label="Menu button">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
                 <path d="M4 5h16" />
@@ -55,7 +51,9 @@
                 <path d="M4 19h16" />
             </svg>
         </button>
-
+        
+    </div>
+    <div class="menuOverlay">
         <div class="menu">
             <a href="#about" class="active">
                 About me
@@ -136,10 +134,13 @@
         <div class="AboutDescription">
             <h1><span>About</span> me</h1>
             <p>I'm a robotics engineering student with a strong interest in web development and user interface design.
-            I enjoy turning ideas into real, functional products by combining an engineering mindset with clean and intuitive UI.<br/>
-            What sets me apart is my ability to work across both software and hardware, allowing me to design solutions that are not
-            only visually appealing, but also robust and practical. I'm a fast learner and highly committed to building things the
-            right way.
+                I enjoy turning ideas into real, functional products by combining an engineering mindset with clean and
+                intuitive UI.<br />
+                What sets me apart is my ability to work across both software and hardware, allowing me to design
+                solutions that are not
+                only visually appealing, but also robust and practical. I'm a fast learner and highly committed to
+                building things the
+                right way.
             </p>
         </div>
     </section>
@@ -172,7 +173,8 @@
                         </div>
                         <div class="projectDescription">
                             Full-stack web application for controlling a modular robotic arm.
-                            Includes a FastAPI backend and an interactive frontend with pose management, motion sequences, and real-time slider
+                            Includes a FastAPI backend and an interactive frontend with pose management, motion
+                            sequences, and real-time slider
                             control.
                         </div>
                         <div class="projectDivider"></div>
@@ -197,7 +199,7 @@
 
                 </a>
             </article>
-            
+
         </div>
     </section>
 
@@ -319,7 +321,7 @@
             </div>
         </div>
     </section>
-
+    <script src="./scripts/navigation.js"></script>
     <script src="./scripts/projectsFilter.js"></script>
     <script src="./scripts/typewriterEffect.js"></script>
     <script src="./scripts/scrollSpy.js"></script>

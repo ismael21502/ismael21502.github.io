@@ -151,6 +151,7 @@
 @media (max-width: 768px) {
     .projects {
         min-height: 0;
+        padding-top: 60px;
     }
 
     .projectsFilter {

@@ -3,6 +3,7 @@
     flex-direction: row;
     gap: 10%;
     padding: 5%;
+    padding-top: 80px;
     min-height: 100vh;
     box-sizing: border-box;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -74,6 +75,7 @@
         text-align: justify;
         gap: 30px;
         min-height: auto;
+        padding-top: 60px ;
     }
 
     .aboutImage {

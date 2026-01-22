@@ -82,6 +82,18 @@
     cursor: pointer;
 }
 
+.menuOverlay {
+    opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .menu {
     position: absolute;
     right: 10px;
@@ -94,8 +106,12 @@
     border-radius: 10px;
     border: 1px solid rgb(46, 54, 68);
     background-color: rgba(17, 25, 39);
+    z-index: 1001;
 }
-
+.menuOverlay.active{
+    opacity: 1;
+        pointer-events: auto;
+}
 .menu a.active{
     color: rgb(0, 225, 225);
 }
