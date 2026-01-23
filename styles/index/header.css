@@ -110,7 +110,7 @@
 }
 .menuOverlay.active{
     opacity: 1;
-        pointer-events: auto;
+    pointer-events: auto;
 }
 .menu a.active{
     color: rgb(0, 225, 225);
