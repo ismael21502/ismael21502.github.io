@@ -1,7 +1,7 @@
 body {
     color: rgb(147, 146, 163);
-    padding: 15px 50px;
-    font-size: 1.5rem;
+    padding: 15px 5%;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
 }
 
 button {
@@ -12,7 +12,7 @@ button {
 
 h1 {
     color: white;
-    font-size: 2.6rem;
+    font-size: clamp(1.4rem, 3.5vw, 2.6rem);
     font-weight: bold;
 }
 
@@ -21,7 +21,7 @@ h1 {
     align-items: center;
     gap: 5px;
     margin-bottom: 25px;
-    font-size: 1.3rem;
+    font-size: clamp(0.75, 1.75vw, 1.3rem);
     color: rgb(147, 146, 163);
 }
 
@@ -53,7 +53,9 @@ h1 {
     display: flex;
     position: relative;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
+    aspect-ratio: 16/9;
+    max-height: 50vh;
     background-color: black;
 }
 
@@ -62,7 +64,9 @@ h1 {
     justify-content: center;
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 100%;
+    overflow: hidden;
+    /* height: 60vh; */
 }
 
 .carouselTrack {
@@ -82,7 +86,7 @@ h1 {
     transition: opacity 0.5s ease-in-out, filter 0.1s ease;
 }
 
-.carousel img.active{
+.carousel img.active {
     filter: none;
     opacity: 1;
 }
@@ -97,7 +101,7 @@ h1 {
     transition: opacity 0.5s ease-in-out, filter 0.1s ease;
 }
 
-.carousel video.active{
+.carousel video.active {
     filter: none;
     opacity: 1;
 }
@@ -113,11 +117,15 @@ h1 {
 
 .carouselArrows button {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(147, 146, 163, 0.3);
-    font-size: 3rem;
+    font-size: 1.3em;
+    padding: 0.25em;
     border-radius: 99999px;
-    padding: 10px 0;
+    aspect-ratio: 1/1;
+    /* padding: 10px 0; */
 }
 
 .carouselArrows button:hover {
@@ -173,14 +181,14 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 3%;
-    gap: 5%;
+    gap: 3.5vw;
 }
 
 .projectInfo {
     display: flex;
     flex-direction: column;
     flex: 2;
-    gap: 15px;
+    gap: clamp(5px, 2vw, 15px);
 }
 
 .projectMeta {
@@ -195,7 +203,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 1.5rem;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
     font-weight: bold;
     color: white;
 }
@@ -232,8 +240,8 @@ h1 {
 .techStack {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 20px;
+    gap: 0.75em;
+    padding: 1.1em;
     border: 1px solid rgba(24, 28, 42);
     border-radius: 10px;
     background-color: rgba(18, 21, 35);
@@ -243,17 +251,17 @@ h1 {
 .techStackList {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0.5em;
 }
 
 .techTag {
     display: flex;
-    gap: 5px;
+    gap: 0.4em;
     background-color: rgba(29, 35, 50);
     border: 1px solid rgba(40, 50, 65);
-    border-radius: 10px;
-    font-size: 1rem;
-    padding: 5px 15px;
+    font-size: clamp(0.6rem, 2vw, 1rem);
+    padding: 0.4em 0.9em;
+    border-radius: 0.6em;
     color: rgb(45, 209, 209);
 }
 
@@ -273,9 +281,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 0.5em;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.4em;
     background-color: transparent;
 }
 

@@ -275,7 +275,7 @@
                     </a>
                 </div>
             </div>
-            <form class="form" action="https://api.web3forms.com/submit" method="POST">
+            <form id="contactForm" class="form" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="2a7007d9-27d5-4907-a071-07b6ddcaa154">
 
                 <div class="input">
@@ -309,16 +309,26 @@
                         <textarea name="message" required></textarea>
                     </div>
                 </div>
-                <button class="sendButton" type="submit">
+                <button id="sendButton" class="sendButton" type="submit">
                     <span class="sendButtonInner">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-send-icon lucide-send">
-                            <path
-                                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-                            <path d="m21.854 2.147-10.94 10.939" />
-                        </svg>
-                        Send message
+                        <span id="sendIcon" class="sendButtonIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send">
+                                <path
+                                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+                                <path d="m21.854 2.147-10.94 10.939" />
+                            </svg>
+                        </span>
+                        <span id="checkIcon" class="sendButtonIcon hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                        </span>
+                        <span id="sendLoadingIndicator" class="sendButtonIcon loadingIndicator hidden">
+
+                        </span>
+                        <span class="sendButtonText">Send message</span>
                 </button>
             </form>
         </div>
@@ -328,6 +338,7 @@
     <script src="./scripts/typewriterEffect.js"></script>
     <script src="./scripts/scrollSpy.js"></script>
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/formSubmit.js"></script>
 </body>
 
 </html>
