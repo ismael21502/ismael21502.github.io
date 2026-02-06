@@ -55,7 +55,7 @@ h1 {
     justify-content: center;
     /* width: 100%; */
     aspect-ratio: 16/9;
-    max-height: 50vh;
+    max-height: 75vh;
     background-color: black;
 }
 
@@ -67,6 +67,10 @@ h1 {
     height: 100%;
     overflow: hidden;
     /* height: 60vh; */
+}
+
+.paragraph{
+    white-space: pre-line;
 }
 
 .carouselTrack {
@@ -283,6 +287,7 @@ h1 {
     align-items: center;
     gap: 0.5em;
     width: 100%;
+    padding: 0.1em 0;
     border-radius: 0.4em;
     background-color: transparent;
 }
@@ -319,6 +324,7 @@ h1 {
 
 .metaButton svg {
     width: 1em;
+    height: 1em;
 }
 
 .hollowButton svg {

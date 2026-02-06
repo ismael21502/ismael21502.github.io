@@ -58,6 +58,7 @@
 
 .projectCard {
     display: flex;
+    height: 100%;
     flex-direction: column;
     max-width: 800px;
     margin: 0 auto;
@@ -102,9 +103,19 @@
 
 .projectContent {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     padding: 20px;
+    padding-bottom: 0;
+}
+
+.projectFooter{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 0;
+    gap: 15px;
 }
 
 .projectName {
@@ -128,6 +139,7 @@
 }
 
 .projectDescription {
+    height: 100%;
     font-size: clamp(0.8rem, 1.2vw, 1.1rem);
 }
 
